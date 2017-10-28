@@ -4,7 +4,28 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     <servlet>
-        <servlet-name>MyServlet</servlet-name>
-        <servlet-class>com.delete.MyServlet</servlet-class>
+        <servlet-name>Client</servlet-name>
+        <servlet-class>basic.Client</servlet-class>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>Client</servlet-name>
+        <url-pattern>basic/client</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Sever</servlet-name>
+        <servlet-class>basic.Sever</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Sever</servlet-name>
+        <url-pattern>basic/sever</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginSever</servlet-name>
+        <servlet-class>basic.LoginSever</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginSever</servlet-name>
+        <url-pattern>basic/LoginSever</url-pattern>
+    </servlet-mapping>
 </web-app>

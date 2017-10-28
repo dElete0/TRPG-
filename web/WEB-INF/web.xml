@@ -13,11 +13,19 @@
     </servlet-mapping>
     
     <servlet>
-        <servlet-name></servlet-name>
+        <servlet-name>Sever</servlet-name>
         <servlet-class>basic.Sever</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Sever</servlet-name>
         <url-pattern>basic/sever</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginSever</servlet-name>
+        <servlet-class>basic.LoginSever</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginSever</servlet-name>
+        <url-pattern>basic/LoginSever</url-pattern>
     </servlet-mapping>
 </web-app>
